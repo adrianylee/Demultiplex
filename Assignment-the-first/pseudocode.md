@@ -4,7 +4,7 @@ Output: A dictionary of all index matches (including index-hops) and a count of 
 
 Unit Tests
 
-
+```
 R1, R4 --> Biological Reads (no indexes, and they shouldn't reverse complement)
 R2, R3 --> Index Reads (reverse complements)
 
@@ -71,3 +71,4 @@ def demultiplex(R1, R2, R3, R4, quality_score_cutoff):
 
     return dictionary, unknown, hopped
 
+```
