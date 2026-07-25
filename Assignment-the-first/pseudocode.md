@@ -4,7 +4,7 @@ Output: A dictionary of all index matches (including index-hops) and a count of 
 
 Unit Tests
 
-
+```
 R1, R4 --> Biological Reads (no indexes, and they shouldn't reverse complement)
 R2, R3 --> Index Reads (reverse complements)
 
@@ -69,5 +69,6 @@ def demultiplex(R1, R2, R3, R4, quality_score_cutoff):
             write R1 and R4 to index hopping FASTQ
             add R2Index-R3Index to header
 
-    return dictionary, unknown, hopped
+    return dictionary, unknown
 
+```
