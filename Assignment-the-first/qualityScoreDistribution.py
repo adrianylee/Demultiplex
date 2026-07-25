@@ -33,6 +33,9 @@ def calculateDistribution():
             for pos in range(len(perBaseQualityScore)):
                 perBaseQualityScore[pos] /= records
 
+        with open("averageQS.txt", "a") as fo:
+            fo.write(f"{name}: {perBaseQualityScore}\n")
+
         base_pos = [0] * len(perBaseQualityScore)
         for i in range(len(perBaseQualityScore)):
             base_pos[i] = i

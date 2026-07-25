@@ -1,0 +1,18 @@
+Result summary:
+Matched: 2
+Index: 1
+Unknown: 1
+
+expected barcode hits: 
+R1 matched
+R2 index hopping
+R3 matched
+R4 unknown
+
+barcode/index hopping dictionary
+{('GTAGCGTA','GTAGCGTA'): 1, ('CGATCGAT','GTAGCGTA'): 1, ('AACAGCGA','AACAGCGA'): 1,}
+
+reverse_complement():
+Input: GTAGCGTA	 Output: TACGCTAC
+Input: TACGCTAC	 Output: GTAGCGTA
+Input: AACAGCGA	 Output: TCGCTGTT
