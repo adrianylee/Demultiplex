@@ -12,7 +12,7 @@
 | 1294_S1_L008_R4_001.fastq.gz | read2 | 101 | 33 |
 
 2. Per-base NT distribution
-    1. [I1.png](I1.png) [I2.png](I2.png) [R1.png](R1.png) [R2.png](R2.png) 
+    1. ![I1.png](I1.png) ![I2.png](I2.png) ![R1.png](R1.png) ![R2.png](R2.png) 
     2. I think a Q30 cutoff score is very reasonable for this Illumina data. A Q30 is a 99.9% accuracy rate. Since the indexes are very short, a higher quality cutoff of at least 30 must be used to minimize the amount of errors that could contaminate downstream analysis. A Q40 cutoff is too strict for this. Based on the average quality score distribution, a Q30 cutoff makes sense since it includes the mean quality score of all positions (lots of data + gets rid of horrible outliers).
     3. Index (for R1) with N base calls: 3976613
        Index (for R2) with N base calls: 3328051
