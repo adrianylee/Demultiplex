@@ -40,7 +40,7 @@ def calculateDistribution():
         for i in range(len(perBaseQualityScore)):
             base_pos[i] = i
 
-        plt.bar(base_pos, perBaseQualityScore)
+        plt.scatter(base_pos, perBaseQualityScore)
         plt.title(f"Average Quality Score at Each Base Value Position Across {name}")
         plt.xlabel("Base Position")
         plt.ylabel("Average Quality Score")

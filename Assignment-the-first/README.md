@@ -31,6 +31,13 @@ Please fill in your answers on [Answers.md](Answers.md)
 
 ## Part 1 – Quality Score Distribution per-nucleotide
 1.	Perform some initial data exploration! Record any bash commands you used inside a lab notebook (submit to this repo!).
+
+zcat /projects/bgmp/shared/2017_sequencing/1294_S1_L008_R3_001.fastq.gz | head -2
+zcat 1294_S1_L008_R4_001.fastq.gz | head -6
+zcat 1294_S1_L008_R1_001.fastq.gz | head -6
+zcat 1294_S1_L008_R3_001.fastq.gz | head -6
+zcat 1294_S1_L008_R2_001.fastq.gz | head -6
+
     1. Determine which files contain the indexes, and which contain the paired end reads containing the biological data of interest. Create a table and label each file with either read1, read2, index1, or index2.
     2. Determine the length of the reads in each file.
     3. Determine the phred encoding for these data.

@@ -18,14 +18,14 @@ Output: TGCA
 
 def phred(index):
     '''takes in an index and returns True if any character is below the threshold quality score'''
-    return True/False
+    return index
 Input: J
 Output: 41
 Input: #
 Output: 2 
 
 
-def initialize_indexes(R1, R2, R3, R4):
+def initialize_indexes(indexes.txt):
     '''initialize dictionary with every valid index pair'''
     itertools to create the combinations of everything initialize dictionary all values at 0
     return dict
@@ -43,12 +43,7 @@ def demultiplex(R1, R2, R3, R4, quality_score_cutoff):
 
         reverse_complement(R3 index)
 
-        if R2 index not in indexes or R3 index not in indexes:
-            unknown += 1
-            write R1 and R4 to unknown FASTQ
-            continue
-
-        if R2 index contains "N" or R3 index contains "N":
+        if R2 index not in indexes or R3 index not in indexes or either contain "N":
             unknown += 1
             write R1 and R4 to unknown FASTQ
             continue
@@ -69,6 +64,8 @@ def demultiplex(R1, R2, R3, R4, quality_score_cutoff):
             write R1 and R4 to index hopping FASTQ
             add R2Index-R3Index to header
 
-    return dictionary, unknown
+    calculate percentages
+    return dictionary, unknown, percentages
+
 
 ```
