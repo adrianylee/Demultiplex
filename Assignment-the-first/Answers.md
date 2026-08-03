@@ -1,5 +1,7 @@
 # Assignment the First
 
+Link to current lab notebook: https://github.com/adrianylee/bgmp-Lab-Notebook/blob/main/Demultiplex.md
+
 ## Part 1
 1. Be sure to upload your Python script. Provide a link to it here:
 [qualityScoreDistribution.py](qualityScoreDistribution.py)
